@@ -44,7 +44,7 @@ void readButtons(){
 string inputString(int length){
     int r = 0;
     string entered = "";
-    
+
     while (r != length) {
         readButtons();
 
@@ -63,9 +63,6 @@ string inputString(int length){
             wait_ms(250);
         }
     }
-
-
-    printf("%s\n", entered.c_str());
 
     return entered.c_str();
 }
@@ -137,7 +134,6 @@ void commandletListner() {
     int tresholdCounter = 5;
 
     while (1) {
-        // printf("Cycle\n");
         int tempBuffer = 0x00;
 
         readButtons();
